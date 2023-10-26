@@ -3,9 +3,9 @@ class CreatePosts < ActiveRecord::Migration[7.1]
     create_table :posts do |t|
       t.string :title
       t.text :text
-      t.integer :commentsCounter
-      t.integer :likesCounter
-      t.references :users,foreign_key:true
+      t.integer :comments_counter
+      t.integer :likes_counter
+      t.references :author, foreign_key: { to_table: 'users' }
       t.timestamps
     end
   end
