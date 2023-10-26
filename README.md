@@ -41,6 +41,38 @@ Constructed with Ruby on Rails, an influential web framework celebrated for its 
 
 To get started with the Blog App, follow the instructions below:
 
+### Prerequisites <a name="prerequisites"></a>
+**Before you can run the Blog App, make sure you have the following prerequisites:**
+
+- ✅ **Ruby**: Ensure that Ruby is installed on your machine. If it's not installed, you can download and install it from the [official Ruby website](https://www.ruby-lang.org/en/documentation/installation/).
+
+- ✅ **Ruby on Rails**: You'll need the Ruby on Rails framework installed. If you don't have it yet, you can install it using the following command:
+  ```
+  gem install rails
+  ```
+- ✅ **PostgreSQL**: This project assumes the use of PostgreSQL as the default database. You can download PostgreSQL from the [official PostgreSQL website](https://www.postgresql.org/download/).
+
+1. To install ruby on windows using WSL:
+```
+  - Install WSL, So Open powershell as admin and run: wsl --install
+  - Restart the computer , it will continue ubuntu installation
+  - Add user name and password
+```
+
+2. After WSL installion:
+```
+  - Open Ubuntu terminal and run following commands:
+    - (Optional) Update Ubuntu: 
+        sudo apt update
+        sudo apt upgrade
+    - Install Ruby:
+        sudo apt install ruby
+    - Verify installation:
+        ruby --version
+    - Install package manager:
+        sudo gem install bundler
+```
+
 ### 🛠 Setup <a name="setup"></a>
 
 1. ✔ Clone the project repository:
@@ -54,25 +86,14 @@ To get started with the Blog App, follow the instructions below:
     cd blog_app
     ```
 
-
-### Prerequisites <a name="prerequisites"></a>
-**Before you can run the Blog App, make sure you have the following prerequisites:**
-
-- ✅ **Ruby**: Ensure that Ruby is installed on your machine. If it's not installed, you can download and install it from the [official Ruby website](https://www.ruby-lang.org/en/documentation/installation/).
-
-- ✅ **Ruby on Rails**: You'll need the Ruby on Rails framework installed. If you don't have it yet, you can install it using the following command:
-  ```
-  gem install rails
-  ```
-- ✅ **PostgreSQL**: This project assumes the use of PostgreSQL as the default database. You can download PostgreSQL from the [official PostgreSQL website](https://www.postgresql.org/download/).
-
-
 ### 📖 Usage <a name="usage"></a>
-Follow these steps to use the Blog App:
 
-Open your terminal.
+To get a local copy up and running, follow these steps.
+Choose the directory on your local machine where you want to copy the project. For example:
 
-Navigate to the directory where the project files are located:
+```
+cd /home/user/name-of-your-directory
+```
 
 Start the Rails server:
 
@@ -96,6 +117,11 @@ Feel free to check the issues [page](https://github.com/Alibaba2023/blog_app/iss
 
 ## ⭐️ Show Your Support <a name="support"></a>
 If you find this project helpful, consider giving it a ⭐️ to show your support!
+
+## Acknowledgments <a name="acknowledgements"></a>
+
+We would like to express our gratitude to the Ruby community and Microverse for the readme template.
+
 
 ## 📜 License <a name="license"></a>
 This project is [MIT](./LICENSE) licensed.
