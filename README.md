@@ -26,19 +26,11 @@ Constructed with Ruby on Rails, an influential web framework celebrated for its 
 
 ##  Key Features <a name="key-features"></a>
 
-- ✅ Comprehensive Ruby on Rails implementation.
-- ✅ User access control and validation.
-- ✅ Article generation, modification, and removal.
 - ✅ Interactive commentary system for engaging with articles.
 - ✅ Favoriting and unfavoriting articles.
 - ✅ Adaptable web design for various devices.
 - ✅ Reliable error management and data validation.
 
-
-
-
-
-Note: Each feature will be marked with an "x" when it is fully implemented and functional.
 
 ## 🔭 Future Features <a name="future-project"></a>
 - [ ] Advanced text editor for styling articles. ✅
@@ -92,7 +84,7 @@ Open your web browser and go to http://localhost:3000 to access the Blog App.
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Mohammad Anwar Hussaini**
+👤 **Ali Baba Hussaini**
 
 - GitHub: [@Alibaba2023](https://github.com/Alibaba2023/)
 - LinkedIn [Alibaba Hussaini](https://www.linkedin.com/in/ali-baba-hussaini-630607267/)
