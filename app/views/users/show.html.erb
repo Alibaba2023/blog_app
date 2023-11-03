@@ -1,9 +1,9 @@
 <section class="user-posts-section">
-  <div class="user-item">
-    <div class="image-box">
+  <div class="grid1-5">
+    <div class="image-box user-item">
       <img src="<% @user.photo %>" alt="user photo">
     </div>
-    <div class="user-info-box">
+    <div class="user-info-box user-item">
       <h1 class="user-name"><%= @user.name %></h1>
       <h4 class="posts-count">Number of posts: <%= @user.posts.count %></h4>
     </div>

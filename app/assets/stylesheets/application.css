@@ -23,6 +23,12 @@ section {
   margin: 0 auto;
 }
 
+.grid1-5 {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  column-gap: 20px;
+}
+
 .border {
   border: solid;
 }
