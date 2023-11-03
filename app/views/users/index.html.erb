@@ -1,8 +1,20 @@
-<h1>List of all static users:</h1>
-<ul>
-  <li>User 1</li>
-  <li>User 2</li>
-  <li>User 3</li>
-  <li>User 4</li>
-  <li>User 5</li>
-</ul>
+<div>
+  <div>
+    <h1><%= @user.name %></h1>
+    <h4>Number of posts: <%= @user.posts.count %></h4>
+  </div>
+  <div>
+    <h4><strong>Bio</strong></h4>
+    <p><%= @user.bio %></p>
+  </div>
+  <div>
+    <ul>
+      <% @posts.each do |post| %>
+        <li>
+          <h4>Post: #<%= post.id %></h4>
+          <p><%= post.text %></p>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
