@@ -1,8 +1,15 @@
-<h1>List of all static users:</h1>
-<ul>
-  <li>User 1</li>
-  <li>User 2</li>
-  <li>User 3</li>
-  <li>User 4</li>
-  <li>User 5</li>
-</ul>
+<section class="users">
+  <ul class="user-list">
+    <% @users.each do |user| %>
+      <%= link_to user_path(user) do %>
+      <div class="grid1-5">
+        <div class="image-box user-item"><img src="<%= user.photo %>" alt="user photo"></div>
+        <div class="user-info-box user-item">
+          <h1 class="user-name"><%= user.name %></h1>
+          <h4 class="posts-count">Number of posts: <%= user.posts.count %></h4>
+        </div>
+      </div>
+      <% end %>
+    <% end %>
+  </ul>
+</section>

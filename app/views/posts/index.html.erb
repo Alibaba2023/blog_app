@@ -1,6 +1,33 @@
-<h1>List of all posts</h1>
-<ul>
-  <li>post 1</li>
-  <li>post 2</li>
-  <li>post 3</li>
-</ul>
+<section>
+  <div class="grid1-5">
+  <div class="image-box user-item">
+      <img src="<% @user.photo %>" alt="user photo">
+  </div>
+  <div class="user-item">
+    <div class="user-info-box">
+      <h1 class="user-name"><%= @user.name %></h1>
+      <h4 class="posts-count">Number of posts: <%= @user.posts.count %></h4>
+    </div>
+  </div>
+  </div>
+  <ul class="user-posts-list posts-comments">
+    <% @posts.each do |post| %>
+      <li class="posts-comments-box">
+        <%= link_to user_post_path(@user, post) do %>
+        <div class="border user-posts-item">
+          <div>
+            <h4>Post: #<%= post.id %></h4>
+            <p><%= post.text %></p>
+          </div>
+          <p class="comments-likes-count">Comments: <%=post.comments.count %>, Likes: <%= post.likes.count %></p>
+        </div>
+        <% end %>
+        <div class="border comments-box">
+          <% post.five_most_recent_comments.each do |comment| %>
+            <p><%= comment.user.name %>: <%= comment.text %></p>
+          <% end %>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</section>
