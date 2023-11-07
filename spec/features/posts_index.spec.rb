@@ -25,7 +25,6 @@ RSpec.describe 'Posts index', type: :system do
     expect(first_comment_text).to_not be_empty
   end
 
-
   it 'displays the username' do
     visit user_posts_path(users(:one))
 
