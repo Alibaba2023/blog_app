@@ -10,6 +10,22 @@ RSpec.describe 'Posts index', type: :system do
     expect(page).to have_selector('img', count: 1)
   end
 
+  it 'displays the first comment on a post' do
+    visit user_posts_path(users(:one))
+  
+    # Find the first post element on the page
+    first_post_element = first('ul.user-posts-list .posts-comments-box')
+  
+    # Find the first comment element within the first post
+    first_comment_element = first_post_element.find('.comments-box p')
+  
+    # Get the text content of the first comment element
+    first_comment_text = first_comment_element.text
+  
+    expect(first_comment_text).to_not be_empty
+  end
+  
+
   it 'displays the username' do
     visit user_posts_path(users(:one))
 
