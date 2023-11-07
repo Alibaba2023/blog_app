@@ -32,7 +32,7 @@ RSpec.describe 'Users show', type: :system do
   it 'displays the user posts, maximum 3' do
     user = users(:one)
     visit user_path(user)
-  
+
     user.three_most_recent_posts.each do |post|
       expect(page).to have_text(post.text)
     end
