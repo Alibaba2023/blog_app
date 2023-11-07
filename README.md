@@ -109,6 +109,11 @@ Open your web browser and go to http://localhost:3000 to access the Blog App.
 
 - GitHub: [@Alibaba2023](https://github.com/Alibaba2023/)
 - LinkedIn [Alibaba Hussaini](https://www.linkedin.com/in/ali-baba-hussaini-630607267/)
+  
+👤 **Hajnalka Oltyan**
+
+- GitHub: [@hajnaloltyan](https://github.com/hajnaloltyan)
+- LinkedIn: [Hajnal Oltyan](https://www.linkedin.com/in/hajnalka-oltyan/)
 
 ## 🤝 Contributing <a name="contributing"></a>
 
