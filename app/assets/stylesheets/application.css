@@ -7,7 +7,7 @@
 
 body {
   font-family: sans-serif;
-  padding: 64px;
+  padding: 32px;
 }
 
 h1 {
@@ -118,4 +118,22 @@ section {
   width: 100%;
   justify-content: space-between;
   margin-bottom: 32px;
+}
+
+.general-container {
+  margin: 0 auto;
+  padding: 20px 80px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid black;
+}
+
+input {
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
