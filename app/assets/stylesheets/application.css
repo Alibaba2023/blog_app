@@ -119,3 +119,21 @@ section {
   justify-content: space-between;
   margin-bottom: 32px;
 }
+
+.general-container {
+  margin: 0 auto;
+  padding: 0 80px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+input {
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
